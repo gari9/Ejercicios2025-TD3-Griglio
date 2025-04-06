@@ -1,6 +1,6 @@
 
 //  Programa para almacenar HUMEDAD/VELOCIDAD VIENTO/TEMPERATURA en un arreglo de estructuras
-//  Se calcula el promedio de humedad y la temperatura máxima   
+// a Se  calcula el promedio de humedad y la temperatura máxima   
 
 #include <stdio.h>
 
