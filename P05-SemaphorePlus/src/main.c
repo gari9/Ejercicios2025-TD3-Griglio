@@ -61,6 +61,13 @@ void tarea_led(void *taskParmPtr)
             gpio_set_level(LED_VERDE, 0);
             gpio_set_level(LED_ROJO, 1);
         }
+        
+        vTaskDelay(pdMS_TO_TICKS(500));  // LED encendido durante 500ms
+
+        // Apagar ambos LEDs después del destello
+        gpio_set_level(LED_VERDE, 0);
+        gpio_set_level(LED_ROJO, 0);
+
 
         vTaskDelayUntil(&xLastWakeTime, xPeriodicity);
     }
